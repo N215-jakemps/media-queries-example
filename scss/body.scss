@@ -1,0 +1,41 @@
+.wrapper{
+    min-height: 700px;
+    width: 70%;
+    background-color: rgb(244, 188, 255);
+
+    margin: 0 auto;
+
+    .box {
+        height: 200px;
+        width: 50%;
+        background-color: aqua;
+    }
+
+    .media-box{
+        width: 600px;
+        height: 100px;
+        background-color: coral;
+    }
+}
+
+//creating a media query, could target print, screen, or all
+@media all and (max-width: 600px) {
+    .wrapper {
+        .media-box{
+            width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+
+    .wrapper{
+        background-color: bisque;
+    }
+    
+}
+    
+
+
+
+
